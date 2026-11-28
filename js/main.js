@@ -43,7 +43,8 @@ const subtitleLocales = {
 	Chinese: 'zh-Hans',
 	TraditionalChinese: 'zh-Hant',
 	Japanese: 'ja',
-	Korean: 'ko'
+	Korean: 'ko',
+	Thai: 'th'
 };
 
 const CHARACTER = 'Chise';
@@ -58,25 +59,26 @@ const AUDIO_DETAIL = [
 	{
 		dialog: {
 			Japanese: [
-				"ようこそ、先生。",
-				"ここは静かだから…俳句を作るのにちょうど良くて。"
+				"ようこそ、先生。ここは静かだから…俳句を作るのにちょうど良くて。",
+				"ようこそ、先生。ここは静かだから…俳句を作るのにちょうど良くて。"
 			],
 			English: [
-				"Welcome, Sensei.",
-				"It's quiet here... Perfect for writing a haiku."
+				"Welcome, Sensei. It's quiet here... Perfect for writing a haiku.",
+				"Welcome, Sensei. It's quiet here... Perfect for writing a haiku."
 			],
 			Chinese: [
-				"老师，快来。",
-				"这里很安静...很适合写俳句。"
+				"你来了，老师。这里很安静……很适合写俳句。",
+				"你来了，老师。这里很安静……很适合写俳句。"
 			],
 			TraditionalChinese: [
-				"歡迎你，老師！",
-				"這裡很安靜...很適合寫俳句。"
+				"歡迎你，老師。這裡很安靜…要寫俳句的話很合適。",
+				"歡迎你，老師。這裡很安靜…要寫俳句的話很合適。"
 			],
 			Korean: [
-				"어서 와, 선생님!",
-				"이곳은 조용해 하이쿠를 쓰기에는 완벽해"
-			]
+				"어서 와, 선생님. 여기 조용해서… 하이쿠 짓기에 딱 좋아",
+				"어서 와, 선생님. 여기 조용해서… 하이쿠 짓기에 딱 좋아"
+			],
+			Thai: ["เข้ามาสิ คุณครู ที่นี่ เงียบสงบดี เหมาะจะ เป็นที่แต่งกลอนไฮกุ","เข้ามาสิ คุณครู ที่นี่ เงียบสงบดี เหมาะจะ เป็นที่แต่งกลอนไฮกุ"]
 		}
 	},
 	{
@@ -94,10 +96,10 @@ const AUDIO_DETAIL = [
 				"It'll be about what I felt today."
 			],
 			Chinese: [
-				"今天因为和老师在一起...真的好开心。",
-				"所以我领悟了。",
-				"我想写的俳句，是什么…",
-				"像今天这样的心情，就该写进俳句里。"
+				"今天和老师在一起……特别开心。",
+				"所以，我终于领悟到了。",
+				"我想用俳句去描写的……",
+				"原来就是今天这样的心情。"
 			],
 			TraditionalChinese: [
 				"今天和老師在一起…真的很開心。",
@@ -110,7 +112,8 @@ const AUDIO_DETAIL = [
 				"그래서 나, 깨달았어.",
 				"내가 짓고 싶었던 하이쿠, 그건….",
 				"오늘 계속 느꼈던 이 마음을 담은 거라는 걸."
-			]
+			],
+			Thai: ["วันนี้ได้อยู่กับคุณครูแบบนี้... ฉันมีความสุขมากเลย","เพราะงั้นฉัน... รู้แล้วละ","กลอนไฮกุที่ฉันอยากจะแต่ง...","คงเป็นสิ่งที่อยู่ภายในใจ เหมือนกับที่รู้สึกในวันนี้"]
 		}
 	},
 	{
@@ -126,9 +129,9 @@ const AUDIO_DETAIL = [
 				"continue to move"
 			],
 			Chinese: [
-				"今天一整天",
-				"和你一起走来的路",
-				"很好玩"
+				"暮色已四合",
+				"叠影恋恋未忍归",
+				"履声尚成双"
 			],
 			TraditionalChinese: [
 				"逢魔時刻後",
@@ -139,7 +142,8 @@ const AUDIO_DETAIL = [
 				"날 저물어도",
 				"지금도 계속되네",
 				"둘의 발소리"
-			]
+			],
+			Thai: ["ถึงจะมืดแล้ว...","แต่ก็ยังรู้สึกอยู่ถึงตอนนี้เลย","เสียงฝีเท้าของเราสองคน"]
 		}
 	},
 	{
@@ -155,9 +159,9 @@ const AUDIO_DETAIL = [
 				"Let's hang out again, okay?"
 			],
 			Chinese: [
-				"只要是和老师一起，",
-				"未来这样的俳句好像可以继续写下去了。",
-				"下次也一起写吧？"
+				"……和老师一起，我感觉还能作出许多许多，",
+				"像这样的诗。",
+				"下次，还能再来陪我吗？"
 			],
 			TraditionalChinese: [
 				"…感覺和老師一起的話，還能一直，",
@@ -168,7 +172,8 @@ const AUDIO_DETAIL = [
 				"…선생님과 함께라면, 앞으로도 얼마든지-",
 				"하이쿠를 지을 수 있을 것 같아.",
 				"다음에도, 또 같이 하자?"
-			]
+			],
+			Thai: ["ถ้าอยู่กับคุณครูละก็... ต่อจากนี้ไปไม่ว่าเมื่อไร","ก็คงจะแต่งกลอนไฮกุ ได้แน่นอน","คราวหน้าก็มาเล่นด้วยกันใหม่นะ"]
 		}
 	},
 	{
@@ -184,9 +189,9 @@ const AUDIO_DETAIL = [
 				"It really is beautiful..."
 			],
 			Chinese: [
-				"啊...老师，你看那边。",
-				"月色，真美呢。",
-				"真的，好美..."
+				"啊……老师，快看。",
+				"月色真美啊。",
+				"真的，好美……"
 			],
 			TraditionalChinese: [
 				"啊…老師，你看。",
@@ -197,7 +202,8 @@ const AUDIO_DETAIL = [
 				"아…. 선생님 저기 봐봐.",
 				"달이, 아름답네.",
 				"정말, 아름다워…."
-			]
+			],
+			Thai: ["อ๊ะ... คุณครูดูนั่นสิ","พระจันทร์สวยจริงๆ เลยนะ","สวยมากๆ เลย..."]
 		}
 	}
 ];
@@ -309,7 +315,7 @@ function playVoiceline() {
 			track.play().catch(finish);
 
 			if (dialogBox) {
-				textbox.textContent = dialog[window.selectedLanguage][index];
+				textbox.textContent = getSubtitleText(dialog, window.selectedLanguage, index);
 				textbox.style.opacity = 1;
 			}
 		},
@@ -479,6 +485,16 @@ function setMouse(event) {
 	return { x: ax - canvas.width * positionX, y: ay - canvas.height * positionY };
 }
 
+function getSubtitleText(dialog, language, index) {
+	let text = dialog?.[language]?.[index];
+	if (text == null && language === 'Thai') {
+		language = 'English';
+		text = dialog?.[language]?.[index];
+	}
+	textbox.lang = subtitleLocales[language];
+	return text ?? "";
+}
+
 function updateSubtitleLanguage() {
 	let language = subtitleLanguagePreference;
 	if (language === 'auto') {
@@ -492,6 +508,8 @@ function updateSubtitleLanguage() {
 			language = 'Japanese';
 		} else if (primary === 'ko' || primary === 'korean' || primary === 'koreana') {
 			language = 'Korean';
+		} else if (primary === 'th' || primary === 'thai') {
+			language = 'Thai';
 		} else {
 			language = 'English';
 		}
@@ -501,7 +519,7 @@ function updateSubtitleLanguage() {
 	window.selectedLanguage = language;
 	textbox.lang = subtitleLocales[language];
 	const clip = currentTracks.at(-1);
-	if (dialogBox && clip) textbox.textContent = clip.dialog[language][clip.index];
+	if (dialogBox && clip) textbox.textContent = getSubtitleText(clip.dialog, language, clip.index);
 }
 
 function init() {
